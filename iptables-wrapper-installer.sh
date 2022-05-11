@@ -47,6 +47,9 @@ if [ -x /usr/sbin/alternatives ]; then
 elif [ -x /usr/sbin/update-alternatives ]; then
     # Debian style alternatives
     altstyle="debian"
+elif [ -x /usr/bin/update-alternatives ]; then
+    # Debian style alternatives
+    altstyle="debian"
 else
     # No alternatives system
     altstyle="none"
